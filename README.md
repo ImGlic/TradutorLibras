@@ -17,3 +17,9 @@
 Democratizar e facilitar o acesso a educação por meio da tecnologia.
 
 ## Sumário
+
+Note:
+
+- Mudar o tradutor de libras para Soletrando em Libras.
+
+- Mudar o Avatar 3D para tradutor em Libras.

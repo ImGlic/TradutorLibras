@@ -12,23 +12,24 @@
     <title>Calculadora</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        ΞΞ
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" aria-current="page" href="./index.html">Tradutor de Libras</a>
-          <a class="nav-link" href="./calculadora.html">Calculadora</a>
-          <a class="nav-link" href="./soletrador.html">Soletrador de Libras</a>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <p>🖐</p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            ☝
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="./index.html">👨‍👩‍👦Tradutor de Libras</a>
+              <a class="nav-link" href="./calculadora.html">🔢Calculadora de Libras</a>
+              <a class="nav-link" aria-current="page" href="./soletrador.html">👉Soletrador de Libras</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </nav>
+      </nav>
 
       <div class="container h2-style">
-        <h2>Calculadora</h2>
+        <h2>Calculadora de Libras</h2>
       </div>
 
       <div class="container">
@@ -37,34 +38,29 @@
                 <div class="calculator">
                     <input type="text" class="text-area" id="display" readonly>
                     <div class="buttons">
-                        <button class="clear" id="clear">C</button>
-                        <button class="num transparent" disabled></button>
-                        <button class="num transparent" disabled></button>
-                        <button class="op">/</button>
                         <button class="num">7</button>
                         <button class="num">8</button>
                         <button class="num">9</button>
-                        <button class="op">*</button>
+                        <button class="op">/</button>
                         <button class="num">4</button>
                         <button class="num">5</button>
                         <button class="num">6</button>
-                        <button class="op">+</button>
+                        <button class="op">*</button>
                         <button class="num">1</button>
                         <button class="num">2</button>
                         <button class="num">3</button>
                         <button class="op">-</button>
-                        <button class="num btn-lg double-width">0</button>
-                        <button class="num transparent"></button>
+                        <button class="num">0</button>
+                        <button class="op">+</button>
                         <button class="num">,</button>
+                        <button class="clear" id="clear">c</button>
                         <button id="equals">=</button>
-                        
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="result">
                     <h2>Resultado</h2>
-                    <hr>
                     <input type="text" class="text-area-output" id="output1" readonly>
                     <input type="text" class="text-area-output-lb" id="output2" readonly>
                 </div>
@@ -72,8 +68,17 @@
         </div>
     </div>
 
-      
-    
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
       <script src="./scripts/script_calculadora.js"></script>
 </body>
 </html>

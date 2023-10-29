@@ -4,11 +4,11 @@
 }
 
 .custom-navbar {
-  background-color: #039EFF; /* Defina a cor de fundo desejada aqui */
-  padding: 15px;
-  font-family: 'Imprima', sans-serif;
-  justify-content: center;
-}
+    background-color: #6BFF63; /* Defina a cor de fundo desejada aqui */
+    padding: 15px;
+    font-family: 'Imprima', sans-serif;
+    justify-content: center;
+  }
   
 .custom-navbar p{
     font-size: 32px;
@@ -17,8 +17,6 @@
 
   .custom-navbar .navbar-brand,
   .custom-navbar .nav-link {
-    font-weight: bold;
-    background-color: #FEF200;
     color: #000; /* Defina a cor dos links aqui */
   }
   
@@ -34,11 +32,29 @@
   
   .navbar-toggler {
     border: solid 2px black;
-    width: 64px;  /* Ajustando a largura do botão */
-    height: 64px; /* Ajustando a altura do botão */
-    background-color: yellow;
-    border-radius: 16px; /* Ajustando para bordas completamente arredondadas */
-    padding: 8px 8px;  /* Ajuste no padding para centralizar o ícone */
+    width: 64px;  
+    height: 64px; 
+    background-color: #FEF200;
+    border-radius: 16px; 
+    padding: 8px 8px;  
+  }
+
+  .navbar-toggler:active {
+    border: solid 2px black;
+    width: 64px;  
+    height: 64px; 
+    background-color: #FFD300;
+    border-radius: 16px; 
+    padding: 8px 8px;  
+  }
+  
+  .navbar-toggler:hover {
+    border: solid 2px black;
+    width: 64px;  
+    height: 64px; 
+    background-color: #FFD300;
+    border-radius: 16px; 
+    padding: 8px 8px;  
   }
   
   .navbar-toggler:focus {
@@ -61,21 +77,17 @@
   }
 
   .navbar-expand-lg .navbar-collapse{
-    justify-content: right;
+    justify-content: center;
   }
 
 
 /* Todas páginas */
 
 .h2-style{
-  background-color: rgb(255,255,255,20%);
-  text-align: center;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  width: 300px;
-  border-radius: 13px;
-  font-size: 60px;
-}
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+} 
 
 /* Calculadora */
 
@@ -97,13 +109,12 @@ body {
     margin: 16px;
 }
 
-
-
 #display {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     font-size: 18px;
+    border-radius: 16px;
     border: none;
     text-align: right;
 }
@@ -114,15 +125,13 @@ body {
     gap: 10px;
 }
 
-
-
 .clear {
   width: 100%;
   padding: 20px;
   font-size: 18px;
   border: solid 2px black;
   border-radius: 16px;
-  background-color: white;
+  background-color: #FF1E00;
   cursor: pointer;
 }
 
@@ -132,7 +141,7 @@ body {
   font-size: 18px;
   border: solid 2px black;
   border-radius: 16px;
-  background-color: wheat;
+  background-color: #DB1A00;
   cursor: pointer;
 }
 
@@ -142,28 +151,8 @@ body {
   font-size: 18px;
   border: solid 2px black;
   border-radius: 16px;
-  background-color: white;
+  background-color: #6BFF63;
   cursor: pointer;
-}
-
-.num.double-width{
-  width: 200%;
-}
-
-.num.double-width:hover{
-  width: 200%;
-}
-
-.num.transparent{
-  background-color: transparent;
-  border: none;
-  cursor: default;
-  color: white;
-}
-
-.num.transparent:hover{
-  background-color: transparent;
-  border: none;
 }
 
 .op{
@@ -172,7 +161,7 @@ body {
   font-size: 18px;
   border: solid 2px black;
   border-radius: 16px;
-  background-color: white;
+  background-color: #6BFF63;
   cursor: pointer;
 }
 
@@ -182,7 +171,7 @@ body {
     font-size: 18px;
     border: solid 2px black;
     border-radius: 16px;
-    background-color: wheat;
+    background-color: #5CDB56;
     cursor: pointer;
 }
 
@@ -192,7 +181,7 @@ body {
   font-size: 18px;
   border: solid 2px black;
   border-radius: 16px;
-  background-color: wheat;
+  background-color: #5CDB56;
   cursor: pointer;
 }
 
@@ -205,23 +194,24 @@ body {
 }
 
 #equals {
-  width: 100%;
   padding: 20px;
   font-size: 18px;
   border: solid 2px black;
   border-radius: 16px;
-  background-color: white;
+  background-color: #6BFF63;
   cursor: pointer;
+  grid-column: span 4;
 } 
 
 #equals:hover{
-  width: 100%;
+
   padding: 20px;
   font-size: 18px;
   border: solid 2px black;
   border-radius: 16px;
-  background-color: wheat;
+  background-color: #5CDB56;
   cursor: pointer;
+  grid-column: span 4;
 }
 
 #equals:focus {
@@ -234,20 +224,10 @@ body {
     margin: 8px;
     font-family: 'Imprima', sans-serif;
     border: solid 2px black;
+    border-radius: 16px;
     font-size: 20px;
     text-align: center;
 
-}
-
-
-.result h2{
-  text-align: center;
-}
-
-.result hr{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  border: 1px solid black;
 }
 
 .text-area-output{
@@ -259,19 +239,18 @@ body {
     border-radius: 16px;
     font-size: 36px;
     text-align: center;
-    background-color: rgb(246, 97, 97,72%);
+    background-color: #FEF200;
 }
 
 .text-area-output-lb{
     width: 96%;
-    height: 18vh;
+    height: 8vh;
     margin: 8px;
     font-family: 'libras', sans-serif;
     border: solid 2px black;
     border-radius: 16px;
     font-size: 36px;
     text-align: center;
-    background-color: rgb(5, 60, 255,46%);
-}
 
-  
+    background-color: #6BFF63;
+}
