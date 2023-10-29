@@ -53,9 +53,15 @@
       </div>
     </nav>
 
-    <div class="modal" class="modal fade" data-bs-backdrop="static" tabindex="-1" id="autoShowModal">
+    <div
+      class="modal"
+      class="modal fade"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="autoShowModal"
+    >
       <div class="modal-dialog modal-expand-xl custom-modal">
-        <div class="modal-content ">
+        <div class="modal-content">
           <div class="modal-header">
             <h3 class="modal-title">Aprendendo a usar o avatar 3D</h3>
             <button
@@ -154,7 +160,7 @@
 </html>
 
 <script language="JavaScript" type="text/javascript">
-  $("#autoShowModal").hide();
+  setTimeout(() => $("#autoShowModal").modal("hide"), 10000);
   function abreModal() {
     $("#autoShowModal").modal("show");
   }
